@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class sinhVien {
+public class Sinhvien {
     String hoten, gioitinh;
     int namsinh, tuoi;
 
