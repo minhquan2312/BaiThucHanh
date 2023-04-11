@@ -1,5 +1,10 @@
 import java.util.Scanner;
 
+import Nhanvien.Nhanvien;
+import Student.Sinhvien;
+import shapes.Hinhtrutron;
+import shapes.hinhTron;
+
 public class App {
     public static void main(String[] args) throws Exception {
         hinhTron ht = new hinhTron();
@@ -25,7 +30,7 @@ public class App {
                 htt.nhapBanKinh();
                 htt.nhapChieucao();
                 htt.tinhChuvi();
-                htt.tinhDientich();
+                htt.tinhDienTich();
                 htt.tinhThetich();
                 htt.inThongso();
                 break;

@@ -1,43 +1,28 @@
 import java.util.Scanner;
+
 public class Bai1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int a; int b;
-        System.out.println ("Nhap a:"); 
-        a = sc.nextInt();
-        System.out.println ("Nhap b:"); 
-        b = sc.nextInt();
-        int tong = a+b;
-        System.out.println("Tong:" +tong);
-        int hieu = a-b;
-        System.out.println("Hieu:" +hieu);
-        int tich = a*b;
-        System.out.println("Tich:" +tich);
-        float thuong = a/b;
-        System.out.println("Thuong:" +thuong);
-        int phandu = a%b;
-        System.out.println("phandu:" +phandu);
-        
-        System.out.println("Ket qua so sanh bang 2 so " + a + " va " + 
-        b + " la " + (a == b) );
-        System.out.println("Ket qua so sanh lon hon hoac bang 2 so " + a + " va " + 
-        b + " la " + (a <= b) );
-        System.out.println("Ket qua so sanh nho hon hoac bang 2 so " + a + " va " + 
-        b + " la " + (a >= b) );
-        System.out.println("Ket qua so sanh khong bang 2 so " + a + " va " + 
-        b + " la " + (a != b) );
-        System.out.println("Ket qua so sanh nho hon 2 so " + a + " va " + 
-        b + " la " + (a < b) );
-        System.out.println("Ket qua so sanh lon hon 2 so " + a + " va " + 
-        b + " la " + (a > b)) ;
-
-
-      
-
-
-       
-
-
+        float a, b;
+        System.out.print("Nhap so thu 1: ");
+        a = sc.nextFloat();
+        System.out.print("Nhap so thu 2: ");
+        b = sc.nextFloat();
+        System.out.printf("Tong cua 2 so la %.2f + %.2f = %.2f",a,b,a+b);
+        System.out.printf("\nHieu cua 2 so la %.2f - %.2f = %.2f",a,b,a-b);
+        System.out.printf("\nTich cua 2 so la %.2f * %.2f = %.2f",a,b,a*b);
+        System.out.printf("\nThuong cua 2 so la %.2f / %.2f = %.2f",a,b,a/b);
+        System.out.printf("\nPhan du cua 2 so = %.2f",a%b);
+        if(a > b) {
+        System.out.printf("\nSo %.2f lon hon so %.2f",a,b);
+        } 
+        else if( a < b) {
+        System.out.printf("\nSo %.2f nho hon so %.2f",a,b); 
+        }
+        else{
+            System.out.printf("\nSo %.2f bang so %.2f",a,b);
+        }
+        sc.close();
 
     }
 }
