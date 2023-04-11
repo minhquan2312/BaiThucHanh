@@ -8,35 +8,35 @@ import shapes.hinhTron;
 public class Mainclass {
     public static void main(String[] args) {
         hinhTron ht = new hinhTron();
-        hinhTron.xuatTen();
-        hinhTron.nhapBanKinh();
-        hinhTron.tinhChuvi();
-        hinhTron.tinhDienTich();
-        hinhTron.inChuvi();
-        hinhTron.inDientich();
+        ht.xuatTen();
+        ht.nhapBanKinh();
+        ht.tinhChuvi();
+        ht.tinhDienTich();
+        ht.inChuvi();
+        ht.inDientich();
 
         Hinhtrutron htt = new Hinhtrutron();
-        Hinhtrutron.xuatTen();
-        Hinhtrutron.nhapChieucao();
-        Hinhtrutron.tinhThetich();
-        Hinhtrutron.inThetich();
+        htt.xuatTen();
+        htt.nhapChieucao();
+        htt.tinhThetich();
+        htt.inThetich();
 
         Hinhchunhat hcn = new Hinhchunhat();
-        Hinhchunhat.xuatTen();
-        Hinhchunhat.nhapChieudai();
-        Hinhchunhat.nhapChieurong();
-        Hinhchunhat.tinhChuvi();
-        Hinhchunhat.tinhDienTich();
-        Hinhchunhat.inChuvi();
-        Hinhchunhat.inDientich();
+        hcn.xuatTen();
+        hcn.nhapChieudai();
+        hcn.nhapChieurong();
+        hcn.tinhChuvi();
+        hcn.tinhDienTich();
+        hcn.inChuvi();
+        hcn.inDientich();
 
         Hinhvuong hv = new Hinhvuong();
-        Hinhvuong.xuatTen();
-        Hinhvuong.nhapCanh();
-        Hinhvuong.tinhChuvi();
-        Hinhvuong.tinhDienTich();
-        Hinhvuong.inChuvi();
-        Hinhvuong.inDientich();
+        hv.xuatTen();
+        hv.nhapCanh();
+        hv.tinhChuvi();
+        hv.tinhDienTich();
+        hv.inChuvi();
+        hv.inDientich();
     }
     
 }
