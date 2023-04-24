@@ -11,15 +11,15 @@ public class hinhTron extends Hinhhoc {
         ten = "Hinh Tron";
     }
 
-    public static void nhapBanKinh(){
+    public void nhapBanKinh(){
         System.out.println("Ban kinh =");
         Scanner sc = new Scanner(System.in);
         banKinh = sc.nextFloat();
     }
-    public static void tinhChuvi(){
+    public void tinhChuvi(){
         Chuvi = 2* PI * banKinh;
     }
-    public static void tinhDienTich(){
+    public void tinhDienTich(){
         Dientich = PI * banKinh * banKinh ;
     }
 

@@ -9,16 +9,16 @@ public class Hinhhoc {
     public static float Dientich;
     public static float Thetich;
 
-    public static void xuatTen() {
+    public void xuatTen() {
         System.out.println("\n\n=====" + ten + "=====");
     }
-    public static void inChuvi() {
+    public void inChuvi() {
         System.out.println("Chu vi =" + Chuvi);
     }
-    public static void inDientich() {
+    public void inDientich() {
         System.out.println("Dien tich =" + Dientich);
     }
-    public static void inThetich() {
+    public void inThetich() {
         System.out.println("The tich =" + Thetich);
     }
 }

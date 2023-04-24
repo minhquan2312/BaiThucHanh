@@ -9,20 +9,19 @@ public class Hinhtrutron extends hinhTron {
        ten = "Hinh Tru";
    }
 
-   public static void nhapChieucao(){
+   public void nhapChieucao(){
       nhapBanKinh();
 
       System.out.println("Chieu cao =");
        Scanner sc = new Scanner(System.in);
        Chieucao = sc.nextFloat();
    }
-   public static void tinhThetich(){
+   public void tinhThetich(){
       tinhDienTich();
       Thetich =  Chieucao * Dientich;
    }
    
     }
-    
 
-    
-    
+
+

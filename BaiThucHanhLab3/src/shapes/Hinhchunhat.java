@@ -10,20 +10,20 @@ public class Hinhchunhat extends Hinhhoc{
         ten = "Hinh Chu Nhat";
     }
 
-    public static void nhapChieudai(){
+    public void nhapChieudai(){
         System.out.println("Chieu dai  =");
         Scanner sc = new Scanner(System.in);
         dai = sc.nextFloat();
     }
-    public static void nhapChieurong(){
+    public void nhapChieurong(){
         System.out.println("Chieu rong  =");
         Scanner sc = new Scanner(System.in);
         rong = sc.nextFloat();
     }
-    public static void tinhChuvi(){
+    public void tinhChuvi(){
         Chuvi = 2* ( dai + rong);
     }
-    public static void tinhDienTich(){
+    public void tinhDienTich(){
         Dientich = dai * rong ;
     }
 }

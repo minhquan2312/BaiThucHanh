@@ -8,7 +8,7 @@ public class Hinhvuong extends Hinhchunhat {
        ten = "Hinh Vuong";
    }
 
-   public static void nhapCanh(){
+   public void nhapCanh(){
 
       System.out.println("Canh =");
        Scanner sc = new Scanner(System.in);
