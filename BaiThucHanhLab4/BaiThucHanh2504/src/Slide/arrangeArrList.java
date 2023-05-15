@@ -1,10 +1,10 @@
+package Slide;
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.Scanner;
 
-public class arrangeLinkedList {
+public class arrangeArrList {
     public static void main(String[] args) {
-        LinkedList<Integer> arrlist = new LinkedList<Integer>();
+        ArrayList<Integer> arrlist = new ArrayList<>();
         Scanner sc = new Scanner(System.in);
         int number;
 
@@ -14,7 +14,7 @@ public class arrangeLinkedList {
         for (int i = 0; i < n; i++) {
             System.out.printf("Nhap vao phan tu a[%d]: ", i);
             number = sc.nextInt();
-            arrlist.addFirst(number);
+            arrlist.add(number);
         }
 
         System.out.print("Phan tu trong mang la: ");
@@ -35,7 +35,7 @@ public class arrangeLinkedList {
         for (Integer integer : arrlist) {
             System.out.print(integer + "\t");
         }
-
+        
         System.out.println("");
         System.out.print("Phan tu lon nhat cua mang la: " + arrlist.get(0));
     }
