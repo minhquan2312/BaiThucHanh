@@ -1,0 +1,55 @@
+import java.io.BufferedReader;  
+import java.io.FileReader;  
+import java.io.FileWriter;  
+import java.io.IOException;  
+import java.util.HashMap;  
+import java.util.Map;  
+
+public class ElectricityConsumption {  
+
+    public static void main(String[] args) {  
+        String inputFile = "sample.txt"; // Đường dẫn đến tập tin đầu vào  
+        String outputFile = "output.txt"; // Đường dẫn đến tập tin đầu ra  
+
+        Map<Integer, int[]> yearData = new HashMap<>();  
+
+        // Đọc dữ liệu từ tập tin  
+        try (BufferedReader br = new BufferedReader(new FileReader(inputFile))) {  
+            String line;  
+            while ((line = br.readLine()) != null) {  
+                String[] values = line.split("\\s+");  
+                int year = Integer.parseInt(values[0]);  
+                int[] monthlyData = new int[12];  
+
+                for (int i = 1; i <= 12; i++) {  
+                    monthlyData[i - 1] = Integer.parseInt(values[i]);  
+                }  
+
+                yearData.put(year, monthlyData);  
+            }  
+        } catch (IOException e) {  
+            e.printStackTrace();  
+        }  
+
+        // Tính toán trung bình và lọc ra các năm  
+        try (FileWriter writer = new FileWriter(outputFile)) {  
+            for (Map.Entry<Integer, int[]> entry : yearData.entrySet()) {  
+                int year = entry.getKey();  
+                int[] monthlyData = entry.getValue();  
+                int total = 0;  
+
+                for (int consumption : monthlyData) {  
+                    total += consumption;  
+                }  
+
+                double average = total / 12.0;  
+
+                if (average > 30) {  
+                    writer.write(year + " " + (int) average + "\n");  
+                }  
+            }  
+        } catch (IOException e) {  
+            e.printStackTrace();  
+        }  
+    }  
+}
